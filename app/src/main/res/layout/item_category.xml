@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/category_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="category"
+    android:textSize="20sp"
+    android:textColor="?attr/colorOnPrimary"
+    android:textStyle="bold"
+    android:padding="12dp"
+    android:letterSpacing=".04"
+    android:background="?attr/colorPrimary">
+
+
+
+</TextView>

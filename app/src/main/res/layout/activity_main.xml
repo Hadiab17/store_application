@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="?attr/colorPrimary">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <EditText
+            android:id="@+id/edt_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/bg_edt_login"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="4dp"
+            android:drawableTint="?attr/colorOnPrimary"
+            android:hint="User Name"
+            android:padding="16dp"
+            android:textColorHint="?attr/colorOnPrimary" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_user_name"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/bg_edt_login"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="4dp"
+            android:drawableTint="?attr/colorOnPrimary"
+            android:hint="Password"
+            android:padding="16dp"
+            android:textColorHint="?attr/colorOnPrimary" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="16sp"
+            android:background="@drawable/bg_login_btn"
+            android:layout_below="@id/edt_password"
+            android:layout_marginTop="8dp"
+            android:id="@+id/login_btn"/>
+
+        <LinearLayout
+            android:id="@+id/signin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_below="@id/login_btn"
+            android:padding="8dp">
+
+            <CheckBox
+                android:checked="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Remember me"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnPrimary"
+                android:id="@+id/remember_checkbox"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signin_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edt_login"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@id/signin_layout"
+            android:background="?attr/colorOnPrimary"
+            android:id="@+id/view"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/txt"
+            android:textColor="?attr/colorOnPrimary"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or connect with"
+            android:layout_below="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:background="?attr/colorPrimary"
+            android:layout_marginTop="-22dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:padding="16dp"
+            android:layout_below="@+id/txt">
+
+            <TextView
+                android:textAlignment="center"
+                android:background="@drawable/bg_social_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="T"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="32sp"
+                android:layout_marginEnd="24dp"/>
+
+            <TextView
+                android:textSize="32sp"
+                android:layout_marginEnd="24dp"
+                android:textAlignment="center"
+                android:background="@drawable/bg_social_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="F"
+                android:textColor="?attr/colorOnPrimary"
+                />
+
+            <TextView
+
+                android:layout_marginEnd="24dp"
+                android:textAlignment="center"
+                android:background="@drawable/bg_social_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="G"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="32sp"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

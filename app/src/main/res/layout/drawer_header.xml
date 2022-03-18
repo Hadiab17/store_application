@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="?attr/colorOnPrimary">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/images"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/user_image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hadi Abbasi"
+        android:textSize="22sp"
+        android:id="@+id/user_name"
+        android:textColor="?attr/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/user_image"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="Hadi 1424155"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="14sp" />
+
+</RelativeLayout>
